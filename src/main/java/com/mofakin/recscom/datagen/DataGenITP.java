@@ -18,29 +18,29 @@ public class DataGenITP extends ItemTagsProvider  {
 	
 	public static final IOptionalNamedTag<Item> HEATSOURCE = recscomTag("heatsource");
 	
-    public DataGenITP(DataGenerator gen, BlockTagsProvider blockTagProvider, ExistingFileHelper existingFileHelper) {
-        super(gen, blockTagProvider, RecscomMain.MODID, existingFileHelper);
-    }
+    	public DataGenITP(DataGenerator gen, BlockTagsProvider blockTagProvider, ExistingFileHelper existingFileHelper) {
+        	super(gen, blockTagProvider, RecscomMain.MODID, existingFileHelper);
+    	}
     
-    @Override
-    public void addTags() {
+    	@Override
+    	public void addTags() {
     	
-    	this.tag(HEATSOURCE).add (
+    		this.tag(HEATSOURCE).add (
     			
     			Items.TORCH,
     			Items.REDSTONE_TORCH,
     			Items.SOUL_TORCH,
     			RegisterRelEqt.TOOLSTICKONFIRE.get(),
     			RelEqtMain.BLOCKOILLAMP.asItem()
-    	);
-    }
+    		);
+    	}
     
-    private static IOptionalNamedTag<Item> recscomTag(String name) {
-        return ItemTags.createOptional(new ResourceLocation(RecscomMain.MODID, name));
-    } 
+    	private static IOptionalNamedTag<Item> recscomTag(String name) {
+        	return ItemTags.createOptional(new ResourceLocation(RecscomMain.MODID, name));
+    	} 
     
-    @Override
-    public String getName() {
-        return "ReCsCom Item Tags";
-    } 
+    	@Override
+    	public String getName() {
+        	return "ReCsCom Item Tags";
+    	} 
 }
