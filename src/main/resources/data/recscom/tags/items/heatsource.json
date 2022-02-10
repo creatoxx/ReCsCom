@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:torch",
+    "minecraft:redstone_torch",
+    "minecraft:soul_torch",
+    "releqt:toolstickonfire",
+    "releqt:blockoillamp"            
+  ]
+}

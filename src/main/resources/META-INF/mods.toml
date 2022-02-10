@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Open Source"
+issueTrackerURL="http://my.issue.tracker/"
+[[mods]]
+modId="recscom" #must be the same as in MODID main file
+version="${file.jarVersion}"
+displayName="RE CS Compatibility"
+updateJSONURL="http://myurl.me/"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/material-library"
+logoFile="examplemod.png"
+credits="Thanks to Mojang, and specially @diesieben07 on the Forge Forums"
+authors="Cratthorax aka CrEaToXx aka Mofakin"
+description='''Creating compatibility between De Re Metallica and Cold Sweat.'''
+[[dependencies.recscom]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.recscom]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"   
+[[dependencies.recscom]]
+    modId="releqt"
+    mandatory=true
+    versionRange="[0.4.2, 0.4.3)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.recscom]]
+    modId="cold_sweat"
+    mandatory=true
+    versionRange="[r2.1.2,)"
+    ordering="NONE"
+    side="BOTH"    
