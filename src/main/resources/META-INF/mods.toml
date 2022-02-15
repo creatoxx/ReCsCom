@@ -33,6 +33,6 @@ description='''Creating compatibility between De Re Metallica and Cold Sweat.'''
 [[dependencies.recscom]]
     modId="cold_sweat"
     mandatory=true
-    versionRange="[r2.1.2,)"
+    versionRange="[r2.1.3,)"
     ordering="NONE"
     side="BOTH"    

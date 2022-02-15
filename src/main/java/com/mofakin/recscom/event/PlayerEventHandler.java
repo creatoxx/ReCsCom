@@ -5,7 +5,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.momostudios.coldsweat.common.temperature.modifier.HearthTempModifier;
-import net.momostudios.coldsweat.util.PlayerTemp;
+import net.momostudios.coldsweat.util.PlayerHelper;
 
 import com.mofakin.recscom.RecscomMain;
 import com.mofakin.recscom.datagen.DataGenITP;
@@ -25,9 +25,9 @@ public class PlayerEventHandler {
             	if (!player.isInWater() && !player.level.isRainingAt(player.blockPosition())) {
             		
 	            	if(DataGenITP.HEATSOURCE.contains(player.getMainHandItem().getItem()) || DataGenITP.HEATSOURCE.contains(player.getOffhandItem().getItem())) {
-	            		PlayerTemp.addModifier(player, new HearthTempModifier(30), PlayerTemp.Types.AMBIENT, false);     		
+	            		PlayerHelper.addModifier(player, new HearthTempModifier(30), PlayerHelper.Types.AMBIENT, false);     		
 	            	} else {
-	            		PlayerTemp.removeModifiers(player, PlayerTemp.Types.AMBIENT, 1, modifier -> modifier instanceof HearthTempModifier);
+	            		PlayerHelper.removeModifiers(player, PlayerHelper.Types.AMBIENT, 1, modifier -> modifier instanceof HearthTempModifier);
 	            	}
             	}
             }

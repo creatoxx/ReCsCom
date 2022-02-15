@@ -20,12 +20,12 @@ public class InitEventHandler {
     {
         try
         {
-        	event.addBlockEffect(new RelEqtBloomeryEffect().getClass());
-        	event.addBlockEffect(new RelEqtCampfireEffect().getClass());
-        	event.addBlockEffect(new RelEqtFirepitEffect().getClass());
-        	event.addBlockEffect(new RelEqtKilnEffect().getClass());
-        	event.addBlockEffect(new RelEqtRoasterEffect().getClass());
-        	event.addBlockEffect(new RelEqtStoveEffect().getClass());
+        	event.addBlockEffect(new RelEqtBloomeryEffect());
+        	event.addBlockEffect(new RelEqtCampfireEffect());
+        	event.addBlockEffect(new RelEqtFirepitEffect());
+        	event.addBlockEffect(new RelEqtKilnEffect());
+        	event.addBlockEffect(new RelEqtRoasterEffect());
+        	event.addBlockEffect(new RelEqtStoveEffect());
         }
         catch (Exception e) {
             ColdSweat.LOGGER.error("Registering BlockEffects failed!");
