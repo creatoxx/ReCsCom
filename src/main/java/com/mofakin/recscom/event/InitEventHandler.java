@@ -16,10 +16,10 @@ import net.momostudios.coldsweat.core.event.csevents.TempModifierEvent;
 public class InitEventHandler {
 	
     @SubscribeEvent
-    public static void registerBlockEffects(TempModifierEvent.Init.Block event)
-    {
-        try
-        {
+    public static void registerBlockEffects(TempModifierEvent.Init.Block event) {
+    	
+        try {
+        	
         	event.addBlockEffect(new RelEqtBloomeryEffect());
         	event.addBlockEffect(new RelEqtCampfireEffect());
         	event.addBlockEffect(new RelEqtFirepitEffect());
